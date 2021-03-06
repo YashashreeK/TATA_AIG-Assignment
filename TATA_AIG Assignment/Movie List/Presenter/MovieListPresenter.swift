@@ -43,6 +43,15 @@ class MovieListPresenter: MovieListPresenterProtocol{
         }
     }
     
+    func requestSearch(text: String){
+        if let data = arrData?.data{
+            arrMovies = text.isEmpty ? data : data.filter({(value) -> Bool in
+                return value.originalTitle?.range(of: text, options: .caseInsensitive) != nil
+            })
+            view?.loadMovie()
+        }
+    }
+    
     func sortMovies(text: String){
         let newSort = MOVIE_TYPE(rawValue: text) ?? .popularMovie
         if newSort != selectedSort{

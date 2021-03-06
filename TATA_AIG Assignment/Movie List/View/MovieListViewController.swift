@@ -10,6 +10,7 @@ import UIKit
 class MovieListViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var txtSearch: UITextField!
     
     var refresh: UIRefreshControl?
     var presenter: MovieListPresenterProtocol?
@@ -99,6 +100,16 @@ extension MovieListViewController: UIScrollViewDelegate{
     }
 }
 
+//MARK:- UITEXTFIELD METHODS
+extension MovieListViewController: UITextFieldDelegate {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        if let text = textField.text as NSString? {
+            let searchText = text.replacingCharacters(in: range, with: string)
+            presenter?.requestSearch(text: searchText)
+        }
+        return true
+    }
+}
 
 //MARK: List CollectionView Cell
 class ListCell: UICollectionViewCell {

@@ -10,7 +10,6 @@ import Foundation
 
 class WebService{
     class func fetchDetails(url: API_URL, completion: @escaping (Result<Data, NetworkError>) -> Void){
-        print(url.url())
         guard let url = URL(string: url.url()) else{
             completion(.failure(.badURL))
             return

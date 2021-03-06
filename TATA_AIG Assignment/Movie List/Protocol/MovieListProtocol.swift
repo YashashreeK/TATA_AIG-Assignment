@@ -25,6 +25,7 @@ protocol MovieListPresenterProtocol: class {
     func requestMovieDetail(index: Int)
     func movieData() -> [MovieData]
     func sortMovies(text: String)
+    func requestSearch(text: String)
 }
 
 protocol MovieListInteractorProtocol: class {
