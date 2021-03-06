@@ -13,13 +13,16 @@ class MovieListViewController: UIViewController {
     
     var refresh: UIRefreshControl?
     var presenter: MovieListPresenterProtocol?
-
+    var isPageRefreshing = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         MovieListRouter.createMovieListModule(view: self)
         
         refresh = UIRefreshControl()
         refresh?.addTarget(self, action: #selector(loadDetails(sender:)), for: .valueChanged)
+        refresh?.tintColor = .white
+        
         collectionView.refreshControl = refresh
         
         loadDetails(sender: nil)
@@ -31,7 +34,7 @@ class MovieListViewController: UIViewController {
         if sender != nil{
             sender?.endRefreshing()
         }
-        presenter?.requestAllMovie()
+        presenter?.requestMovie(sender != nil)
     }
 }
 
@@ -40,6 +43,7 @@ extension MovieListViewController: MovieListViewProtocol{
     func loadMovie() {
         DispatchQueue.main.async { [weak self] in
             self?.collectionView.reloadData()
+            self?.isPageRefreshing = false
         }
     }
 }
@@ -67,6 +71,18 @@ extension MovieListViewController: UICollectionViewDelegate, UICollectionViewDat
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         presenter?.requestMovieDetail(index: indexPath.row)
+    }
+}
+
+//MARK:- UISCROLLVIEW METHODS
+extension MovieListViewController: UIScrollViewDelegate{
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if(collectionView.contentOffset.y >= (collectionView.contentSize.height - collectionView.bounds.size.height)) {
+            if !isPageRefreshing {
+                isPageRefreshing = true
+                presenter?.requestMovie(false)
+            }
+        }
     }
 }
 

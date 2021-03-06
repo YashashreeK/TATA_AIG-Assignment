@@ -20,7 +20,7 @@ protocol MovieListPresenterProtocol: class {
     var interactor: MovieListInteractorProtocol? {get set}
     var router: MovieListRouterProtocol? {get set}
     
-    func requestAllMovie()
+    func requestMovie(_ isRefresh: Bool)
     func requestMovieDetail(index: Int)
     func movieData() -> [MovieData]
 }

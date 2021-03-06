@@ -8,14 +8,23 @@
 import Foundation
 
 class MovieListPresenter: MovieListPresenterProtocol{
+
     var view: MovieListViewProtocol?
     var interactor: MovieListInteractorProtocol?
     var router: MovieListRouterProtocol?
     var arrData: MovieModel?
+    var isRefresh: Bool?
     
-    func requestAllMovie() {
-        let count = (arrData?.page ?? 0) + 1
-        interactor?.fetchMovie(page: count)
+    func requestMovie(_ isRefresh: Bool) {
+        self.isRefresh = isRefresh
+        let count = isRefresh ? 1 : (arrData?.page ?? 0) + 1
+        if let totalCount = arrData?.totalCount{
+            if  totalCount >= count{
+                interactor?.fetchMovie(page: count)
+            }
+        }else{
+            interactor?.fetchMovie(page: count)
+        }
     }
     
     func requestMovieDetail(index: Int) {
@@ -31,7 +40,16 @@ class MovieListPresenter: MovieListPresenterProtocol{
 
 extension MovieListPresenter: MovieListOutputInteractorProtocol{
     func didReceiveMovie(data: MovieModel) {
-        arrData = data
+        if let values = arrData, isRefresh == false{
+            ///pagination
+            var arrMovies = values.data
+            arrMovies?.append(contentsOf: data.data ?? [])
+            
+            arrData = data
+            arrData?.data = arrMovies
+        }else{
+            arrData = data
+        }
         view?.loadMovie()
     }
     
