@@ -8,8 +8,8 @@
 import UIKit
 
 extension UIApplication{
-    func getNavigation() -> UINavigationController?{
-        return UIApplication.shared.keyWindow?.rootViewController as? UINavigationController
+    var keyWindow: UIWindow?{
+        UIApplication.shared.windows.filter {$0.isKeyWindow}.first
     }
     
     func getStoryboard() -> UIStoryboard{

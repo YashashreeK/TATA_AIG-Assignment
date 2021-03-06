@@ -56,3 +56,9 @@ extension NetworkError: LocalizedError{
         }
     }
 }
+
+
+enum VIEWCONTROLLER: String{
+    case movieList = "MovieListViewController"
+    case movieDetail = "MovieDetailViewController"
+}

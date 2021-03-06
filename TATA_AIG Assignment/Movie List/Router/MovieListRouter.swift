@@ -5,7 +5,7 @@
 //  Created by Yashashree on 06/03/21.
 //
 
-import Foundation
+import UIKit
 
 class MovieListRouter: MovieListRouterProtocol{
     
@@ -19,6 +19,10 @@ class MovieListRouter: MovieListRouterProtocol{
     }
     
     func navigateToMovieDetails(data: MovieData) {
-        
+        let identifier = VIEWCONTROLLER.movieDetail.rawValue
+        if let vc = UIApplication.shared.getStoryboard().instantiateViewController(withIdentifier: identifier) as? MovieDetailViewController{
+            MovieDetailRouter.createDetailModule(view: vc, data: data)
+            UIApplication.shared.keyWindow?.rootViewController?.present(vc, animated: true, completion: nil)
+        }
     }
 }

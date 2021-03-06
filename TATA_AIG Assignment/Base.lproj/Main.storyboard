@@ -12,7 +12,7 @@
         <!--Movie List View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MovieListViewController" customModule="TATA_AIG_Assignment" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MovieListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="MovieListViewController" customModule="TATA_AIG_Assignment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -68,17 +68,16 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="g3l-GQ-rPn" id="j9q-If-Unm"/>
-                        <segue destination="H1t-hw-Fbc" kind="presentation" identifier="toDetails" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="iZr-Bd-Wkg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="161" y="82"/>
         </scene>
-        <!--View Controller-->
+        <!--Movie Detail View Controller-->
         <scene sceneID="51J-S6-XEx">
             <objects>
-                <viewController id="H1t-hw-Fbc" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MovieDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="H1t-hw-Fbc" customClass="MovieDetailViewController" customModule="TATA_AIG_Assignment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ID3-xZ-bo9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

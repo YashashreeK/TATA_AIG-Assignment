@@ -10,16 +10,14 @@ import Foundation
 protocol MovieDetailViewProtocol {
     //Presenter -> View
     var presenter: MovieDetailPresenterProtocol? {get set}
-    func loadMovieDetails()
+    
+    func loadMovieDetails(movie: MovieData)
 }
 
 protocol MovieDetailPresenterProtocol {
     //View -> Presenter
     var view: MovieDetailViewProtocol? {get set}
-    var MovieDetail: MovieModel? {get set}
-
-    func fetchFavourite() -> Bool
-    func requestToToggleFavourite() -> Bool
-    func updateFavourite()
-    func getUserValue(index: IndexPath) -> String
+    var movie: MovieData? {get set}
+    
+    func requestDetails()
 }
