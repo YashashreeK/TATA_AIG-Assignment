@@ -15,6 +15,7 @@ fileprivate enum API_BASE: String {
 
 enum API_METHOD: String{
     case popularMovie = "/movie/popular"
+    case topRatedMovie = "/movie/top_rated"
 }
 
 enum API_URL{
@@ -61,4 +62,9 @@ extension NetworkError: LocalizedError{
 enum VIEWCONTROLLER: String{
     case movieList = "MovieListViewController"
     case movieDetail = "MovieDetailViewController"
+}
+
+enum MOVIE_TYPE: String{
+    case popularMovie = "Popularity"
+    case topRatedMovie = "Higest Rated"
 }

@@ -43,10 +43,22 @@ extension UIImageView {
 }
 
 extension UIViewController {
-    ///Show a basic alert
-    func showAlert(alertText : String, alertMessage : String) {
-        let alert = UIAlertController(title: alertText, message: alertMessage, preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+    ///Show a basic alert OR actionsheet according to the style
+    
+    func showAlert(title: String?, message: String?, actionTitles:[String?], style:UIAlertController.Style, completion: @escaping (_ index: Int) -> Void) {
+        
+        let alert = UIAlertController(title: title, message: message, preferredStyle: style)
+        for (index, title) in actionTitles.enumerated() {
+            let action = UIAlertAction(title: title, style: .default) { (_) in
+                completion(index)
+            }
+            alert.addAction(action)
+        }
+        
+        if style == .actionSheet{
+            let action = UIAlertAction(title: "Cancel", style: .cancel , handler: nil)
+            alert.addAction(action)
+        }
         self.present(alert, animated: true, completion: nil)
     }
 }

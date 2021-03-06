@@ -10,9 +10,10 @@ import Foundation
 class MovieListInteractor: MovieListInteractorProtocol{
     var presenter: MovieListOutputInteractorProtocol?
     
-    func fetchMovie(page: Int) {
+    func fetchMovie(page: Int, type: MOVIE_TYPE) {
         let param = "&page=\(page)"
-        WebService.fetchDetails(url:.movies(type: .popularMovie, param: param)) { (result) in
+        let type: API_METHOD = type == .popularMovie ? .popularMovie : .topRatedMovie
+        WebService.fetchDetails(url:.movies(type: type, param: param)) { (result) in
             switch result{
             case .success(let data):
                 do{

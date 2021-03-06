@@ -12,6 +12,7 @@ protocol MovieListViewProtocol: class {
     var presenter: MovieListPresenterProtocol? {get set}
     
     func loadMovie()
+    func showError(message: String)
 }
 
 protocol MovieListPresenterProtocol: class {
@@ -23,13 +24,14 @@ protocol MovieListPresenterProtocol: class {
     func requestMovie(_ isRefresh: Bool)
     func requestMovieDetail(index: Int)
     func movieData() -> [MovieData]
+    func sortMovies(text: String)
 }
 
 protocol MovieListInteractorProtocol: class {
     //Presenter -> Interactor
     var presenter: MovieListOutputInteractorProtocol? {get set}
     
-    func fetchMovie(page:Int)
+    func fetchMovie(page:Int, type: MOVIE_TYPE)
 }
 
 protocol MovieListOutputInteractorProtocol: class {

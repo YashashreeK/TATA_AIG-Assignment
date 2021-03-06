@@ -28,6 +28,14 @@ class MovieListViewController: UIViewController {
         loadDetails(sender: nil)
     }
     
+    //MARK:- IBACTION METHOD
+    @IBAction func btnSort(sender: UIButton){
+        let arrActions = ["Popularity", "Higest Rated"]
+        showAlert(title: "Sort", message: "Sort Movie Details", actionTitles: arrActions, style: .actionSheet) {[weak self] (index) in
+            self?.presenter?.sortMovies(text: arrActions[index])
+        }
+    }
+    
     //MARK:- HELPER METHOD
     @objc func loadDetails(sender: UIRefreshControl?){
         ///Trigger to fetch movie details
@@ -44,6 +52,11 @@ extension MovieListViewController: MovieListViewProtocol{
         DispatchQueue.main.async { [weak self] in
             self?.collectionView.reloadData()
             self?.isPageRefreshing = false
+        }
+    }
+    
+    func showError(message: String) {
+        self.showAlert(title: "Error", message: message, actionTitles: ["OK"], style: .alert) { (index) in
         }
     }
 }
