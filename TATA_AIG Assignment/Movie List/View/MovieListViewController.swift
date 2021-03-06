@@ -56,14 +56,16 @@ extension MovieListViewController: UICollectionViewDelegate, UICollectionViewDat
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! ListCell
         cell.backgroundColor = .systemIndigo
         
+        if let details = presenter?.movieData(), let imagePath = details[indexPath.row].imagePath{
+            cell.movieImageView.load(path: imagePath, placeholder: nil)
+        }
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = UIScreen.main.bounds.size.width
         return CGSize(width: (width/2) - 10, height: 300)
-    }
-    
+    }    
 }
 
 
