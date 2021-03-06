@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SVProgressHUD
 
 class MovieListPresenter: MovieListPresenterProtocol{
 
@@ -27,9 +28,11 @@ class MovieListPresenter: MovieListPresenterProtocol{
         let count = isRefresh ? 1 : (arrData?.page ?? 0) + 1
         if let totalCount = arrData?.totalCount{
             if  totalCount >= count{
+                showHUD()
                 interactor?.fetchMovie(page: count, type: selectedSort)
             }
         }else{
+            showHUD()
             interactor?.fetchMovie(page: count, type: selectedSort)
         }
     }
@@ -66,9 +69,22 @@ extension MovieListPresenter: MovieListOutputInteractorProtocol{
         }
         arrMovies = arrData?.data
         view?.loadMovie()
+        dismissHUD()
     }
     
     func didFailWithError(error: String) {
+        dismissHUD()
         view?.showError(message: error)
+    }
+}
+
+extension MovieListPresenter{
+    func showHUD(){
+        SVProgressHUD.setDefaultMaskType(.clear)
+        SVProgressHUD.show(withStatus: nil)
+    }
+    
+    func dismissHUD() {
+        SVProgressHUD.dismiss()
     }
 }

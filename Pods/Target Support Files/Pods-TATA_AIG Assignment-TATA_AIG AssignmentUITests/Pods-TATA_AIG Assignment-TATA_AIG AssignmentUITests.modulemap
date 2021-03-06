@@ -1,0 +1,6 @@
+framework module Pods_TATA_AIG_Assignment_TATA_AIG_AssignmentUITests {
+  umbrella header "Pods-TATA_AIG Assignment-TATA_AIG AssignmentUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

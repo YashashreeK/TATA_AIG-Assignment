@@ -26,6 +26,9 @@
 		3A0D92C125F4062D0030F7AD /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D92C025F4062D0030F7AD /* Enum.swift */; };
 		3A0D92C725F4098B0030F7AD /* MovieDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D92C625F4098B0030F7AD /* MovieDetailRouter.swift */; };
 		3A0D92CC25F40A110030F7AD /* MovieDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D92CB25F40A110030F7AD /* MovieDetailPresenter.swift */; };
+		843C6A9BB521C0EB5BC75767 /* Pods_TATA_AIG_AssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276B698BFBA6470BCD13B4FA /* Pods_TATA_AIG_AssignmentTests.framework */; };
+		BF9E2A031DFA56F7E5F060D3 /* Pods_TATA_AIG_Assignment_TATA_AIG_AssignmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323559195F8949771905C1EC /* Pods_TATA_AIG_Assignment_TATA_AIG_AssignmentUITests.framework */; };
+		CF4E64E4DF63B1C7FDE71F6B /* Pods_TATA_AIG_Assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE1F005AFD332C870F7F7796 /* Pods_TATA_AIG_Assignment.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		23B40B18106DED6B6436E63B /* Pods-TATA_AIG Assignment-TATA_AIG AssignmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TATA_AIG Assignment-TATA_AIG AssignmentUITests.debug.xcconfig"; path = "Target Support Files/Pods-TATA_AIG Assignment-TATA_AIG AssignmentUITests/Pods-TATA_AIG Assignment-TATA_AIG AssignmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		276B698BFBA6470BCD13B4FA /* Pods_TATA_AIG_AssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TATA_AIG_AssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		323559195F8949771905C1EC /* Pods_TATA_AIG_Assignment_TATA_AIG_AssignmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TATA_AIG_Assignment_TATA_AIG_AssignmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A0D923025F377B10030F7AD /* TATA_AIG Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TATA_AIG Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A0D923325F377B10030F7AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A0D923A25F377B10030F7AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -71,6 +77,12 @@
 		3A0D92C025F4062D0030F7AD /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
 		3A0D92C625F4098B0030F7AD /* MovieDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailRouter.swift; sourceTree = "<group>"; };
 		3A0D92CB25F40A110030F7AD /* MovieDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailPresenter.swift; sourceTree = "<group>"; };
+		58E922AB213A4ACCE7078595 /* Pods-TATA_AIG Assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TATA_AIG Assignment.release.xcconfig"; path = "Target Support Files/Pods-TATA_AIG Assignment/Pods-TATA_AIG Assignment.release.xcconfig"; sourceTree = "<group>"; };
+		8D18429036353BCE26E65A50 /* Pods-TATA_AIG Assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TATA_AIG Assignment.debug.xcconfig"; path = "Target Support Files/Pods-TATA_AIG Assignment/Pods-TATA_AIG Assignment.debug.xcconfig"; sourceTree = "<group>"; };
+		A00691A4898A06081115FA09 /* Pods-TATA_AIG AssignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TATA_AIG AssignmentTests.release.xcconfig"; path = "Target Support Files/Pods-TATA_AIG AssignmentTests/Pods-TATA_AIG AssignmentTests.release.xcconfig"; sourceTree = "<group>"; };
+		AB8EBE3CF249F18BE5C86D3E /* Pods-TATA_AIG Assignment-TATA_AIG AssignmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TATA_AIG Assignment-TATA_AIG AssignmentUITests.release.xcconfig"; path = "Target Support Files/Pods-TATA_AIG Assignment-TATA_AIG AssignmentUITests/Pods-TATA_AIG Assignment-TATA_AIG AssignmentUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DDA132555D0113D6441D3EF6 /* Pods-TATA_AIG AssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TATA_AIG AssignmentTests.debug.xcconfig"; path = "Target Support Files/Pods-TATA_AIG AssignmentTests/Pods-TATA_AIG AssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FE1F005AFD332C870F7F7796 /* Pods_TATA_AIG_Assignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TATA_AIG_Assignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF4E64E4DF63B1C7FDE71F6B /* Pods_TATA_AIG_Assignment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				843C6A9BB521C0EB5BC75767 /* Pods_TATA_AIG_AssignmentTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,12 +106,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF9E2A031DFA56F7E5F060D3 /* Pods_TATA_AIG_Assignment_TATA_AIG_AssignmentUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C9AAACFD9854E25528A59E0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8D18429036353BCE26E65A50 /* Pods-TATA_AIG Assignment.debug.xcconfig */,
+				58E922AB213A4ACCE7078595 /* Pods-TATA_AIG Assignment.release.xcconfig */,
+				23B40B18106DED6B6436E63B /* Pods-TATA_AIG Assignment-TATA_AIG AssignmentUITests.debug.xcconfig */,
+				AB8EBE3CF249F18BE5C86D3E /* Pods-TATA_AIG Assignment-TATA_AIG AssignmentUITests.release.xcconfig */,
+				DDA132555D0113D6441D3EF6 /* Pods-TATA_AIG AssignmentTests.debug.xcconfig */,
+				A00691A4898A06081115FA09 /* Pods-TATA_AIG AssignmentTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		3A0D922725F377B10030F7AD = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +134,8 @@
 				3A0D924925F377B60030F7AD /* TATA_AIG AssignmentTests */,
 				3A0D925425F377B60030F7AD /* TATA_AIG AssignmentUITests */,
 				3A0D923125F377B10030F7AD /* Products */,
+				0C9AAACFD9854E25528A59E0 /* Pods */,
+				9952B2B2538B2000EEC17AD1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -265,6 +296,16 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		9952B2B2538B2000EEC17AD1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE1F005AFD332C870F7F7796 /* Pods_TATA_AIG_Assignment.framework */,
+				323559195F8949771905C1EC /* Pods_TATA_AIG_Assignment_TATA_AIG_AssignmentUITests.framework */,
+				276B698BFBA6470BCD13B4FA /* Pods_TATA_AIG_AssignmentTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -272,9 +313,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A0D925A25F377B60030F7AD /* Build configuration list for PBXNativeTarget "TATA_AIG Assignment" */;
 			buildPhases = (
+				CD889F3BAE636A82B5CC6C1C /* [CP] Check Pods Manifest.lock */,
 				3A0D922C25F377B10030F7AD /* Sources */,
 				3A0D922D25F377B10030F7AD /* Frameworks */,
 				3A0D922E25F377B10030F7AD /* Resources */,
+				CAB63E1B53DCA5D406B71323 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -289,6 +332,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A0D925D25F377B60030F7AD /* Build configuration list for PBXNativeTarget "TATA_AIG AssignmentTests" */;
 			buildPhases = (
+				01B2D964020B2936F0119829 /* [CP] Check Pods Manifest.lock */,
 				3A0D924225F377B60030F7AD /* Sources */,
 				3A0D924325F377B60030F7AD /* Frameworks */,
 				3A0D924425F377B60030F7AD /* Resources */,
@@ -307,9 +351,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A0D926025F377B60030F7AD /* Build configuration list for PBXNativeTarget "TATA_AIG AssignmentUITests" */;
 			buildPhases = (
+				51B744B09DB2312D63D7C2B0 /* [CP] Check Pods Manifest.lock */,
 				3A0D924D25F377B60030F7AD /* Sources */,
 				3A0D924E25F377B60030F7AD /* Frameworks */,
 				3A0D924F25F377B60030F7AD /* Resources */,
+				831B81B25344922958C584DF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -389,6 +435,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01B2D964020B2936F0119829 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TATA_AIG AssignmentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51B744B09DB2312D63D7C2B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TATA_AIG Assignment-TATA_AIG AssignmentUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		831B81B25344922958C584DF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TATA_AIG Assignment-TATA_AIG AssignmentUITests/Pods-TATA_AIG Assignment-TATA_AIG AssignmentUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TATA_AIG Assignment-TATA_AIG AssignmentUITests/Pods-TATA_AIG Assignment-TATA_AIG AssignmentUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TATA_AIG Assignment-TATA_AIG AssignmentUITests/Pods-TATA_AIG Assignment-TATA_AIG AssignmentUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CAB63E1B53DCA5D406B71323 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TATA_AIG Assignment/Pods-TATA_AIG Assignment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TATA_AIG Assignment/Pods-TATA_AIG Assignment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TATA_AIG Assignment/Pods-TATA_AIG Assignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD889F3BAE636A82B5CC6C1C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TATA_AIG Assignment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3A0D922C25F377B10030F7AD /* Sources */ = {
@@ -581,6 +730,7 @@
 		};
 		3A0D925B25F377B60030F7AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D18429036353BCE26E65A50 /* Pods-TATA_AIG Assignment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -599,6 +749,7 @@
 		};
 		3A0D925C25F377B60030F7AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58E922AB213A4ACCE7078595 /* Pods-TATA_AIG Assignment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -617,6 +768,7 @@
 		};
 		3A0D925E25F377B60030F7AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDA132555D0113D6441D3EF6 /* Pods-TATA_AIG AssignmentTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -638,6 +790,7 @@
 		};
 		3A0D925F25F377B60030F7AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A00691A4898A06081115FA09 /* Pods-TATA_AIG AssignmentTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -659,6 +812,7 @@
 		};
 		3A0D926125F377B60030F7AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23B40B18106DED6B6436E63B /* Pods-TATA_AIG Assignment-TATA_AIG AssignmentUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -678,6 +832,7 @@
 		};
 		3A0D926225F377B60030F7AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB8EBE3CF249F18BE5C86D3E /* Pods-TATA_AIG Assignment-TATA_AIG AssignmentUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

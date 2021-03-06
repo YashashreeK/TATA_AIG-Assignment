@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_TATA_AIG_Assignment_TATA_AIG_AssignmentUITests : NSObject
+@end
+@implementation PodsDummy_Pods_TATA_AIG_Assignment_TATA_AIG_AssignmentUITests
+@end
