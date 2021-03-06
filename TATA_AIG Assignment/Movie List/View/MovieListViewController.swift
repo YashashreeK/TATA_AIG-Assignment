@@ -53,9 +53,7 @@ extension MovieListViewController: UICollectionViewDelegate, UICollectionViewDat
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! ListCell
-        cell.backgroundColor = .systemIndigo
-        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! ListCell        
         if let details = presenter?.movieData(), let imagePath = details[indexPath.row].imagePath{
             cell.movieImageView.load(path: imagePath, placeholder: nil)
         }
