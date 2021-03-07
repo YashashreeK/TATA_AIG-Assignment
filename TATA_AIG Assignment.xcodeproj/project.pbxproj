@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,7 +11,7 @@
 		3A0D923B25F377B10030F7AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0D923925F377B10030F7AD /* Main.storyboard */; };
 		3A0D923D25F377B50030F7AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A0D923C25F377B50030F7AD /* Assets.xcassets */; };
 		3A0D924025F377B50030F7AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0D923E25F377B50030F7AD /* LaunchScreen.storyboard */; };
-		3A0D924B25F377B60030F7AD /* TATA_AIG_AssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D924A25F377B60030F7AD /* TATA_AIG_AssignmentTests.swift */; };
+		3A0D924B25F377B60030F7AD /* MovieList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D924A25F377B60030F7AD /* MovieList.swift */; };
 		3A0D925625F377B60030F7AD /* TATA_AIG_AssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D925525F377B60030F7AD /* TATA_AIG_AssignmentUITests.swift */; };
 		3A0D927D25F3C05C0030F7AD /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D927525F3C05C0030F7AD /* MovieListViewController.swift */; };
 		3A0D927E25F3C05C0030F7AD /* ExtensionUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D927925F3C05C0030F7AD /* ExtensionUtil.swift */; };
@@ -26,6 +26,7 @@
 		3A0D92C125F4062D0030F7AD /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D92C025F4062D0030F7AD /* Enum.swift */; };
 		3A0D92C725F4098B0030F7AD /* MovieDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D92C625F4098B0030F7AD /* MovieDetailRouter.swift */; };
 		3A0D92CC25F40A110030F7AD /* MovieDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D92CB25F40A110030F7AD /* MovieDetailPresenter.swift */; };
+		3ABBACE725F44C450039E316 /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABBACE625F44C450039E316 /* MovieDetail.swift */; };
 		843C6A9BB521C0EB5BC75767 /* Pods_TATA_AIG_AssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276B698BFBA6470BCD13B4FA /* Pods_TATA_AIG_AssignmentTests.framework */; };
 		BF9E2A031DFA56F7E5F060D3 /* Pods_TATA_AIG_Assignment_TATA_AIG_AssignmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323559195F8949771905C1EC /* Pods_TATA_AIG_Assignment_TATA_AIG_AssignmentUITests.framework */; };
 		CF4E64E4DF63B1C7FDE71F6B /* Pods_TATA_AIG_Assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE1F005AFD332C870F7F7796 /* Pods_TATA_AIG_Assignment.framework */; };
@@ -59,7 +60,7 @@
 		3A0D923F25F377B50030F7AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A0D924125F377B50030F7AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A0D924625F377B60030F7AD /* TATA_AIG AssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TATA_AIG AssignmentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A0D924A25F377B60030F7AD /* TATA_AIG_AssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TATA_AIG_AssignmentTests.swift; sourceTree = "<group>"; };
+		3A0D924A25F377B60030F7AD /* MovieList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieList.swift; sourceTree = "<group>"; };
 		3A0D924C25F377B60030F7AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A0D925125F377B60030F7AD /* TATA_AIG AssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TATA_AIG AssignmentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A0D925525F377B60030F7AD /* TATA_AIG_AssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TATA_AIG_AssignmentUITests.swift; sourceTree = "<group>"; };
@@ -77,6 +78,7 @@
 		3A0D92C025F4062D0030F7AD /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
 		3A0D92C625F4098B0030F7AD /* MovieDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailRouter.swift; sourceTree = "<group>"; };
 		3A0D92CB25F40A110030F7AD /* MovieDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailPresenter.swift; sourceTree = "<group>"; };
+		3ABBACE625F44C450039E316 /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
 		58E922AB213A4ACCE7078595 /* Pods-TATA_AIG Assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TATA_AIG Assignment.release.xcconfig"; path = "Target Support Files/Pods-TATA_AIG Assignment/Pods-TATA_AIG Assignment.release.xcconfig"; sourceTree = "<group>"; };
 		8D18429036353BCE26E65A50 /* Pods-TATA_AIG Assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TATA_AIG Assignment.debug.xcconfig"; path = "Target Support Files/Pods-TATA_AIG Assignment/Pods-TATA_AIG Assignment.debug.xcconfig"; sourceTree = "<group>"; };
 		A00691A4898A06081115FA09 /* Pods-TATA_AIG AssignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TATA_AIG AssignmentTests.release.xcconfig"; path = "Target Support Files/Pods-TATA_AIG AssignmentTests/Pods-TATA_AIG AssignmentTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -123,7 +125,6 @@
 				DDA132555D0113D6441D3EF6 /* Pods-TATA_AIG AssignmentTests.debug.xcconfig */,
 				A00691A4898A06081115FA09 /* Pods-TATA_AIG AssignmentTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -167,7 +168,8 @@
 		3A0D924925F377B60030F7AD /* TATA_AIG AssignmentTests */ = {
 			isa = PBXGroup;
 			children = (
-				3A0D924A25F377B60030F7AD /* TATA_AIG_AssignmentTests.swift */,
+				3A0D924A25F377B60030F7AD /* MovieList.swift */,
+				3ABBACE625F44C450039E316 /* MovieDetail.swift */,
 				3A0D924C25F377B60030F7AD /* Info.plist */,
 			);
 			path = "TATA_AIG AssignmentTests";
@@ -565,7 +567,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A0D924B25F377B60030F7AD /* TATA_AIG_AssignmentTests.swift in Sources */,
+				3A0D924B25F377B60030F7AD /* MovieList.swift in Sources */,
+				3ABBACE725F44C450039E316 /* MovieDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
